@@ -4,6 +4,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{site.title}} | {{page.title}}</title>
   {% if page.layout == "post" %}
+  {% if page.image %}
+  <!-- I did! Select the "large image" card type, and supply the image path -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
+  {% else %}
+  <!-- Nope! Select the "summary" card type, supplying the site's title image -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="{{ site.title_image }}">
+  {% endif %}
   <link rel="stylesheet" href="{{site.baseurl}}/assets/css/post.css" />
   <link rel="stylesheet" href="{{site.baseurl}}/assets/css/syntax.css" />
   {% else %}
