@@ -24,7 +24,7 @@ sudo nmap -sS -sV target.local
 -sV: Probe open ports to determine service/version info
 ```
 
-![[1.png]]
+![image](/assets/img/basic1/1.png)
 
 ## Sub-domain Enumeration
 
