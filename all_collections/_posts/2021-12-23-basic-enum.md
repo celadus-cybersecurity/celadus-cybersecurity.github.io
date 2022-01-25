@@ -19,8 +19,11 @@ Nmap is a **network scanning tool** that uses IP packets to identify all the dev
 sudo nmap -sS -sV target.local
 ```
 
-```bash -sS: TCP SYN Scan Technique
+```bash
+
+-sS: TCP SYN Scan Technique
 -sV: Probe open ports to determine service/version info
+
 ```
 
 ![image](/assets/img/basic1/1.png)
