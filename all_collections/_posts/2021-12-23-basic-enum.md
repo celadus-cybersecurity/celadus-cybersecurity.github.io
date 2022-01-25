@@ -16,7 +16,7 @@ Nmap is a **network scanning tool** that uses IP packets to identify all the dev
 **Unauthorized port scanning, for any reason, is strictly prohibited**
 
 ```bash
-sudo nmap -sS -sV target.local
+$ sudo nmap -sS -sV target.local
 ```
 
 ```bash
@@ -31,10 +31,10 @@ sudo nmap -sS -sV target.local
 Wfuzz is **a tool designed for bruteforcing Web Applications**, it can be used for finding resources, directories, scripts, subdomains etc.
 
 ```bash
-wfuzz -w /usr/share/amass/wordlists/subdomains-top1mil-110000.txt  -u http://target.local/ --hc 301 -v -c -H "Host:FUZZ.target.local"
+$ wfuzz -w /usr/share/amass/wordlists/subdomains-top1mil-110000.txt  -u http://target.local/ --hc 301 -v -c -H "Host:FUZZ.target.local"
 ```
 
-```bash
+```
 -w: Specify a wordlist file
 -u: Specify a URL for the request
 
