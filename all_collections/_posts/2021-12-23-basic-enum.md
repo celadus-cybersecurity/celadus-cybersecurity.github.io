@@ -33,7 +33,9 @@ sudo nmap -sS -sV target.local
 Wfuzz is **a tool designed for bruteforcing Web Applications**, it can be used for finding resources, directories, scripts, subdomains etc.
 
 ```bash
+
 wfuzz -w subdomains-top1mil-110000.txt  -u http://target.local/ --hc 301 -v -c -H "Host:FUZZ.target.local"
+
 ```
 
 ```bash
@@ -50,7 +52,9 @@ wfuzz -w subdomains-top1mil-110000.txt  -u http://target.local/ --hc 301 -v -c -
 Gobuster is **a tool used to brute-force URIs including directories and files as well as DNS subdomains**.
 
 ```bash
+
 gobuster dir -u http://target.local/ -w directory-list.txt -x .php,.bak
+
 ```
 
 ```bash
@@ -69,14 +73,17 @@ dir: Uses directory/file enumeration mode
 - The grep command can **search for a string in groups of files**.
 
 ```bash
+
 ss -an | grep 127.0.0.1
+
 ```
 
 ```bash
+
 -a: retrieve a list of both listening and non-listening ports
 -n: dont resolve service names
 
-Symbol | : A pipe is a form of redirection (transfer of standard output to some other destination) that is used in Linux and other Unix-like operating systems to send the output of one command/program/process to another command/program/process for further processing.
+ |: A pipe is a form of redirection (transfer of standard output to some other destination) that is used in Linux and other Unix-like operating systems to send the output of one command/program/process to another command/program/process for further processing.
 
 grep 127.0.0.1 : search for string that contains the IP 127.0.0.1
 ```
