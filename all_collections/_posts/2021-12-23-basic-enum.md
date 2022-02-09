@@ -64,6 +64,20 @@ dir: Uses directory/file enumeration mode
 -x: File extension(s) to search for, in our case .php and .bak
 ```
 
+## Identify Website
+
+```bash
+whatweb -v -a 3  http://blog.local
+```
+
+```bash
+-v: verbose
+-a: aggressive
+```
+
+![image](/assets/img/basic1/1.png)
+
+
 ## Monitor Network Connections
 
 - Assume that we spawn a low level shell in our target machine
