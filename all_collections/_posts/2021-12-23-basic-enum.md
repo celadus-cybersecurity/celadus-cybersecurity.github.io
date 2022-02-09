@@ -75,7 +75,7 @@ whatweb -v -a 3  http://blog.local
 -a: aggressive
 ```
 
-![image](/assets/img/basic1/1.png)
+![image](/assets/img/basic1/2.png)
 
 
 ## Monitor Network Connections
