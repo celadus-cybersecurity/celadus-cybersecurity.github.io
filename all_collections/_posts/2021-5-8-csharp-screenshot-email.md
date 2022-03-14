@@ -2,6 +2,7 @@
 layout: post
 title:  "Custom Malware - Screenshot & Email"
 categories: [malware]
+image: /assets/img/csharp/2.png
 tags: [windows, csharp]
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title:  "Custom Malware - Reverse Shell (Detectable)"
 categories: [powershell]
+image: /assets/img/revshell/4.PNG
 tags: [windows, csharp, cplusplus]
 ---
 
