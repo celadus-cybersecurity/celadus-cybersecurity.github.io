@@ -7,14 +7,17 @@ categories: [ova, export, modprobe, qemu]
 
 ## Necessary tools
 
-```javascript
+```bash
 sudo apt-get install qemu-utils
 ```
 
 #### Extracting the OVA
 
-```javascript
+```bash
 cp /media/sf_Downloads/system.ova /home/kali/Desktop
+```
+
+```bash
 tar -xvf system.ova
 ```
 
@@ -22,8 +25,11 @@ tar -xvf system.ova
 
 #### Forward the partition of the ova to our machine
 
-```javascript
+```bash
 sudo modprobe nbd
+```
+
+```bash
 sudo qemu-nbd -r -c /dev/nbd1 /home/kali/Desktop/system-disk001.vmdk
 ```
 
